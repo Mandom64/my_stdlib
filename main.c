@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "d_array/d_array.h"
+#include "d_array.h"
 
 
 int main() {
@@ -15,6 +15,6 @@ int main() {
     appendElement(d_array, 2);
     appendElement(d_array, 2);
     appendElement(d_array, 2);
-    deleteArray(d_array);
+    // deleteArray(d_array);
     printArray(d_array);
 }
