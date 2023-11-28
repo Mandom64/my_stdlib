@@ -4,17 +4,10 @@
 
 
 int main() {
-    DynamicArray *d_array = NULL;
-    d_array = createDynamicArray();
-    appendElement(d_array, 5);
-    appendElement(d_array, 2);
-    appendElement(d_array, 7);
-    appendElement(d_array, 9);
-    appendElement(d_array, 165);
-    appendElement(d_array, 5);
-    appendElement(d_array, 2);
-    appendElement(d_array, 2);
-    appendElement(d_array, 2);
-    // deleteArray(d_array);
+    DynamicArray *d_array = createDynamicArray();
+    for(int i = 0; i < 1024; i++) {
+        appendElement(d_array, 5);   
+    }
     printArray(d_array);
+    deleteArray(d_array);
 }

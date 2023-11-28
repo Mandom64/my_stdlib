@@ -43,17 +43,17 @@ int appendElement(DynamicArray *d_array, int element) {
 }
 
 int deleteArray(DynamicArray *d_array) {
-    if(!d_array) {
+    if(d_array == NULL) {
         return 0;
     }
-    
-    if(!d_array->data) {
+
+    if(d_array->data != NULL) {
         free(d_array->data);
         d_array->data = NULL;
     }
     d_array->size = 0;
     d_array->capacity = 0;
-    if(!d_array) {
+    if(d_array != NULL) {
         free(d_array);
         d_array = NULL;
     }
